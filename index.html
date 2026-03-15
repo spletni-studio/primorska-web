@@ -1,364 +1,1036 @@
 <!DOCTYPE html>
 <html lang="sl">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Papa D Labs | Spletne strani za manjša podjetja</title>
-      <meta name="description" content="Papa D Labs izdeluje sodobne spletne strani, manjše spletne trgovine in preproste spletne rešitve za manjša podjetja v Sloveniji." />
-      <link rel="stylesheet" href="styles.css" />
-   </head>
-   <body>
-      <header class="topbar">
-         <div class="container topbar-inner">
-            <a href="#home" class="brand">
-            <span class="brand-mark">PD</span>
-            <span>Papa D Labs</span>
-            </a>
-            <nav>
-               <a href="#services">Storitve</a>
-               <a href="#pricing">Paketi</a>
-               <a href="#about">O meni</a>
-               <a href="#languages">Jeziki</a>
-               <a href="#contact" class="nav-cta">Kontakt</a>
-               <div class="lang-switcher" aria-label="Language switcher">
-                  <button class="lang-btn active">SL</button>
-                  <button class="lang-btn">IT</button>
-                  <button class="lang-btn">EN</button>
-                  <button class="lang-btn">DE</button>
-               </div>
-            </nav>
-         </div>
-      </header>
-      <section class="top-slider" aria-label="Featured visual slider">
-         <div class="top-slider-track" id="topSliderTrack">
-            <div class="top-slide">
-               <img alt="Placeholder slide 1" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g1' x1='0' x2='1'><stop offset='0' stop-color='%230f1730'/><stop offset='1' stop-color='%231d2a52'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g1)'/><circle cx='1320' cy='120' r='220' fill='%237dd3fc' opacity='0.14'/><circle cx='260' cy='460' r='190' fill='%23c4b5fd' opacity='0.12'/><rect x='120' y='110' width='520' height='42' rx='21' fill='%23ffffff' opacity='0.13'/><rect x='120' y='180' width='760' height='120' rx='28' fill='%23ffffff' opacity='0.08'/><rect x='120' y='340' width='250' height='72' rx='24' fill='%237dd3fc' opacity='0.22'/><rect x='940' y='110' width='520' height='320' rx='36' fill='%23ffffff' opacity='0.08'/></svg>" />
-               <div class="top-slide-overlay">
-                  <div class="container">
-                     <span class="top-slide-tag">Spletna predstavitev</span>
-                     <h2>Čist, sodoben nastop za manjša podjetja</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papa D Labs | Spletne strani za manjša podjetja</title>
+  <meta name="description" content="Papa D Labs izdeluje sodobne spletne strani, manjše spletne trgovine in preproste spletne rešitve za manjša podjetja v Sloveniji." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">PD</span>
+        <span>Papa D Labs</span>
+      </a>
+
+      <nav>
+        <a href="#services" data-i18n="navServices">Storitve</a>
+        <a href="#pricing" data-i18n="navPricing">Paketi</a>
+        <a href="#about" data-i18n="navAbout">O meni</a>
+        <a href="#languages" data-i18n="navLanguages">Jeziki</a>
+        <a href="#contact" class="nav-cta" data-i18n="navContact">Kontakt</a>
+
+        <div class="lang-switcher" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="sl" type="button">SL</button>
+          <button class="lang-btn" data-lang="it" type="button">IT</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="de" type="button">DE</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="top-slider" aria-label="Featured visual slider">
+    <div class="top-slider-track" id="topSliderTrack">
+      <div class="top-slide">
+        <img alt="Placeholder slide 1" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g1' x1='0' x2='1'><stop offset='0' stop-color='%230f1730'/><stop offset='1' stop-color='%231d2a52'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g1)'/><circle cx='1320' cy='120' r='220' fill='%237dd3fc' opacity='0.14'/><circle cx='260' cy='460' r='190' fill='%23c4b5fd' opacity='0.12'/><rect x='120' y='110' width='520' height='42' rx='21' fill='%23ffffff' opacity='0.13'/><rect x='120' y='180' width='760' height='120' rx='28' fill='%23ffffff' opacity='0.08'/><rect x='120' y='340' width='250' height='72' rx='24' fill='%237dd3fc' opacity='0.22'/><rect x='940' y='110' width='520' height='320' rx='36' fill='%23ffffff' opacity='0.08'/></svg>" />
+        <div class="top-slide-overlay">
+          <div class="container">
+            <span class="top-slide-tag" data-i18n="topSlide1Tag">Spletna predstavitev</span>
+            <h2 data-i18n="topSlide1Title">Čist, sodoben nastop za manjša podjetja</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-slide">
+        <img alt="Placeholder slide 2" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g2' x1='0' x2='1'><stop offset='0' stop-color='%2310172f'/><stop offset='1' stop-color='%2319274a'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g2)'/><rect x='102' y='84' width='1396' height='372' rx='40' fill='%23ffffff' opacity='0.06'/><rect x='148' y='130' width='420' height='250' rx='28' fill='%237dd3fc' opacity='0.18'/><rect x='602' y='130' width='388' height='110' rx='24' fill='%23ffffff' opacity='0.09'/><rect x='602' y='270' width='388' height='110' rx='24' fill='%23ffffff' opacity='0.09'/><rect x='1026' y='130' width='426' height='250' rx='28' fill='%23c4b5fd' opacity='0.16'/></svg>" />
+        <div class="top-slide-overlay">
+          <div class="container">
+            <span class="top-slide-tag" data-i18n="topSlide2Tag">E-trgovina</span>
+            <h2 data-i18n="topSlide2Title">Preprosta trgovina za izdelke in naročila</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-slide">
+        <img alt="Placeholder slide 3" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g3' x1='0' x2='1'><stop offset='0' stop-color='%230d1429'/><stop offset='1' stop-color='%2318203f'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g3)'/><rect x='120' y='96' width='1360' height='348' rx='38' fill='%23ffffff' opacity='0.06'/><rect x='170' y='144' width='580' height='56' rx='22' fill='%23ffffff' opacity='0.1'/><rect x='170' y='228' width='520' height='148' rx='28' fill='%23c4b5fd' opacity='0.16'/><rect x='780' y='144' width='650' height='232' rx='30' fill='%237dd3fc' opacity='0.14'/></svg>" />
+        <div class="top-slide-overlay">
+          <div class="container">
+            <span class="top-slide-tag" data-i18n="topSlide3Tag">Prenova</span>
+            <h2 data-i18n="topSlide3Title">Boljša mobilna izkušnja in modernejši izgled</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-slide">
+        <img alt="Placeholder slide 4" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g4' x1='0' x2='1'><stop offset='0' stop-color='%230e1730'/><stop offset='1' stop-color='%231c294e'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g4)'/><circle cx='1240' cy='160' r='180' fill='%23ffffff' opacity='0.06'/><rect x='132' y='92' width='1336' height='356' rx='40' fill='%23ffffff' opacity='0.05'/><rect x='180' y='138' width='300' height='254' rx='26' fill='%237dd3fc' opacity='0.16'/><rect x='520' y='138' width='300' height='254' rx='26' fill='%23ffffff' opacity='0.08'/><rect x='860' y='138' width='560' height='112' rx='26' fill='%23ffffff' opacity='0.09'/><rect x='860' y='280' width='560' height='112' rx='26' fill='%23c4b5fd' opacity='0.16'/></svg>" />
+        <div class="top-slide-overlay">
+          <div class="container">
+            <span class="top-slide-tag" data-i18n="topSlide4Tag">Podpora</span>
+            <h2 data-i18n="topSlide4Title">Manjše spremembe, vzdrževanje in rast strani</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-slider-dots" id="topSliderDots">
+      <button class="top-dot active" aria-label="Slide 1" type="button"></button>
+      <button class="top-dot" aria-label="Slide 2" type="button"></button>
+      <button class="top-dot" aria-label="Slide 3" type="button"></button>
+      <button class="top-dot" aria-label="Slide 4" type="button"></button>
+    </div>
+  </section>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-card">
+          <div class="eyebrow" data-i18n="eyebrow">Koper · Obala · Slovenija</div>
+          <h1 data-i18n="heroTitle">Izdelava spletnih strani za manjša podjetja, lokale in storitvene dejavnosti.</h1>
+          <p class="lead" data-i18n="heroLead">
+            Pomagam manjšim podjetjem na Obali in drugod po Sloveniji pri izdelavi preprostih, preglednih in sodobnih spletnih strani. Če potrebujete novo predstavitveno stran, prenovo obstoječe strani ali spletno trgovino, lahko pripravim rešitev, ki je jasna, hitra in prilagojena vašemu poslu.
+          </p>
+
+          <div class="hero-points">
+            <div class="mini-point" data-i18n="heroPoint1">Spletne strani za podjetja, lokale in storitve</div>
+            <div class="mini-point" data-i18n="heroPoint2">Prenove obstoječih strani in osnovne spletne trgovine</div>
+            <div class="mini-point" data-i18n="heroPoint3">Enostavna komunikacija in hitra izvedba</div>
+            <div class="mini-point" data-i18n="heroPoint4">Lokalno iz Kopra, na voljo po Sloveniji</div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:your@email.com" data-i18n="heroCta1">Pošljite povpraševanje</a>
+            <a class="btn btn-secondary" href="#services" data-i18n="heroCta2">Poglejte storitve</a>
+          </div>
+
+          <div class="hero-slider" aria-label="Portfolio preview slider">
+            <div class="hero-slides" id="heroSlides">
+              <div class="hero-slide">
+                <div class="hero-slide-card">
+                  <div class="hero-slide-copy">
+                    <div class="tag" data-i18n="slide1Tag">Restavracija</div>
+                    <h3 data-i18n="slide1Title">Spletna stran za restavracijo ali kavarno</h3>
+                    <p data-i18n="slide1Text">Jedilnik, rezervacije, delovni čas, lokacija in fotografije v urejeni predstavitvi, ki dobro deluje tudi na telefonu.</p>
                   </div>
-               </div>
+                  <div class="hero-slide-visual">
+                    <img alt="Restaurant website preview" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'><rect width='800' height='520' fill='%230f1730'/><rect x='28' y='24' width='744' height='472' rx='24' fill='%23162142' stroke='%23354a77'/><rect x='56' y='58' width='220' height='16' rx='8' fill='%23c4b5fd' opacity='0.9'/><rect x='56' y='98' width='688' height='132' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='82' y='124' width='234' height='80' rx='18' fill='%237dd3fc' opacity='0.20'/><rect x='340' y='124' width='170' height='18' rx='9' fill='%23eef2ff' opacity='0.12'/><rect x='340' y='156' width='220' height='12' rx='6' fill='%23eef2ff' opacity='0.08'/><rect x='340' y='178' width='180' height='12' rx='6' fill='%23eef2ff' opacity='0.08'/><rect x='56' y='260' width='320' height='164' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='398' y='260' width='346' height='74' rx='18' fill='%237dd3fc' opacity='0.14'/><rect x='398' y='350' width='346' height='74' rx='18' fill='%23c4b5fd' opacity='0.14'/></svg>" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide">
+                <div class="hero-slide-card">
+                  <div class="hero-slide-copy">
+                    <div class="tag" data-i18n="slide2Tag">Apartmaji</div>
+                    <h3 data-i18n="slide2Title">Predstavitev za apartmaje, sobe ali turizem</h3>
+                    <p data-i18n="slide2Text">Fotogalerija, opis nastanitve, cenik, kontakt in hitre informacije za goste v bolj sodobni obliki.</p>
+                  </div>
+                  <div class="hero-slide-visual">
+                    <img alt="Tourism website preview" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'><rect width='800' height='520' fill='%230f1730'/><rect x='28' y='24' width='744' height='472' rx='24' fill='%23162142' stroke='%23354a77'/><rect x='54' y='54' width='690' height='24' rx='12' fill='%23eef2ff' opacity='0.10'/><rect x='54' y='104' width='430' height='170' rx='22' fill='%237dd3fc' opacity='0.20'/><rect x='506' y='104' width='238' height='170' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='534' y='132' width='136' height='16' rx='8' fill='%23c4b5fd' opacity='0.7'/><rect x='534' y='164' width='158' height='12' rx='6' fill='%23eef2ff' opacity='0.09'/><rect x='534' y='186' width='132' height='12' rx='6' fill='%23eef2ff' opacity='0.09'/><rect x='54' y='300' width='164' height='124' rx='18' fill='%23eef2ff' opacity='0.08'/><rect x='238' y='300' width='164' height='124' rx='18' fill='%23eef2ff' opacity='0.08'/><rect x='422' y='300' width='322' height='124' rx='18' fill='%23c4b5fd' opacity='0.16'/></svg>" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-slide">
+                <div class="hero-slide-card">
+                  <div class="hero-slide-copy">
+                    <div class="tag" data-i18n="slide3Tag">Prenova</div>
+                    <h3 data-i18n="slide3Title">Prenova starejše poslovne spletne strani</h3>
+                    <p data-i18n="slide3Text">Bolj pregledna začetna stran, boljši mobilni prikaz in modernejši vtis za podjetja, ki že imajo spletno stran.</p>
+                  </div>
+                  <div class="hero-slide-visual">
+                    <img alt="Website redesign preview" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'><rect width='800' height='520' fill='%230f1730'/><rect x='28' y='24' width='744' height='472' rx='24' fill='%23162142' stroke='%23354a77'/><rect x='56' y='58' width='180' height='18' rx='9' fill='%23c4b5fd' opacity='0.8'/><rect x='56' y='102' width='688' height='118' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='56' y='246' width='324' height='176' rx='22' fill='%237dd3fc' opacity='0.16'/><rect x='402' y='246' width='342' height='78' rx='18' fill='%23eef2ff' opacity='0.08'/><rect x='402' y='344' width='342' height='78' rx='18' fill='%23eef2ff' opacity='0.08'/></svg>" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="top-slide">
-               <img alt="Placeholder slide 2" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g2' x1='0' x2='1'><stop offset='0' stop-color='%2310172f'/><stop offset='1' stop-color='%2319274a'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g2)'/><rect x='102' y='84' width='1396' height='372' rx='40' fill='%23ffffff' opacity='0.06'/><rect x='148' y='130' width='420' height='250' rx='28' fill='%237dd3fc' opacity='0.18'/><rect x='602' y='130' width='388' height='110' rx='24' fill='%23ffffff' opacity='0.09'/><rect x='602' y='270' width='388' height='110' rx='24' fill='%23ffffff' opacity='0.09'/><rect x='1026' y='130' width='426' height='250' rx='28' fill='%23c4b5fd' opacity='0.16'/></svg>" />
-               <div class="top-slide-overlay">
-                  <div class="container">
-                     <span class="top-slide-tag">E-trgovina</span>
-                     <h2>Preprosta trgovina za izdelke in naročila</h2>
-                  </div>
-               </div>
+
+            <div class="hero-slider-dots" id="heroSliderDots">
+              <button class="hero-dot active" aria-label="Slide 1" type="button"></button>
+              <button class="hero-dot" aria-label="Slide 2" type="button"></button>
+              <button class="hero-dot" aria-label="Slide 3" type="button"></button>
             </div>
-            <div class="top-slide">
-               <img alt="Placeholder slide 3" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g3' x1='0' x2='1'><stop offset='0' stop-color='%230d1429'/><stop offset='1' stop-color='%2318203f'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g3)'/><rect x='120' y='96' width='1360' height='348' rx='38' fill='%23ffffff' opacity='0.06'/><rect x='170' y='144' width='580' height='56' rx='22' fill='%23ffffff' opacity='0.1'/><rect x='170' y='228' width='520' height='148' rx='28' fill='%23c4b5fd' opacity='0.16'/><rect x='780' y='144' width='650' height='232' rx='30' fill='%237dd3fc' opacity='0.14'/></svg>" />
-               <div class="top-slide-overlay">
-                  <div class="container">
-                     <span class="top-slide-tag">Prenova</span>
-                     <h2>Boljša mobilna izkušnja in modernejši izgled</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="top-slide">
-               <img alt="Placeholder slide 4" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 540'><defs><linearGradient id='g4' x1='0' x2='1'><stop offset='0' stop-color='%230e1730'/><stop offset='1' stop-color='%231c294e'/></linearGradient></defs><rect width='1600' height='540' fill='url(%23g4)'/><circle cx='1240' cy='160' r='180' fill='%23ffffff' opacity='0.06'/><rect x='132' y='92' width='1336' height='356' rx='40' fill='%23ffffff' opacity='0.05'/><rect x='180' y='138' width='300' height='254' rx='26' fill='%237dd3fc' opacity='0.16'/><rect x='520' y='138' width='300' height='254' rx='26' fill='%23ffffff' opacity='0.08'/><rect x='860' y='138' width='560' height='112' rx='26' fill='%23ffffff' opacity='0.09'/><rect x='860' y='280' width='560' height='112' rx='26' fill='%23c4b5fd' opacity='0.16'/></svg>" />
-               <div class="top-slide-overlay">
-                  <div class="container">
-                     <span class="top-slide-tag">Podpora</span>
-                     <h2>Manjše spremembe, vzdrževanje in rast strani</h2>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="top-slider-dots" id="topSliderDots"><button class="top-dot active"></button><button class="top-dot"></button><button class="top-dot"></button><button class="top-dot"></button></div>
-      </section>
-      <main id="home">
-         <section class="hero">
-            <div class="container hero-grid">
-               <div class="card hero-card">
-                  <div class="eyebrow">Koper · Obala · Slovenija</div>
-                  <h1>Izdelava spletnih strani za manjša podjetja, lokale in storitvene dejavnosti.</h1>
-                  <p class="lead">Pomagam manjšim podjetjem na Obali in drugod po Sloveniji pri izdelavi preprostih, preglednih in sodobnih spletnih strani. Če potrebujete novo predstavitveno stran, prenovo obstoječe strani ali spletno trgovino, lahko pripravim rešitev, ki je jasna, hitra in prilagojena vašemu poslu.</p>
-                  <div class="hero-points">
-                     <div class="mini-point">Spletne strani za podjetja, lokale in storitve</div>
-                     <div class="mini-point">Prenove obstoječih strani in osnovne spletne trgovine</div>
-                     <div class="mini-point">Enostavna komunikacija in hitra izvedba</div>
-                     <div class="mini-point">Lokalno iz Kopra, na voljo po Sloveniji</div>
-                  </div>
-                  <div class="hero-actions"><a class="btn btn-primary" href="mailto:your@email.com">Pošljite povpraševanje</a><a class="btn btn-secondary" href="#services">Poglejte storitve</a></div>
-                  <div class="hero-slider">
-                     <div class="hero-slides" id="heroSlides">
-                        <div class="hero-slide">
-                           <div class="hero-slide-card">
-                              <div class="hero-slide-copy">
-                                 <div class="tag">Restavracija</div>
-                                 <h3>Spletna stran za restavracijo ali kavarno</h3>
-                                 <p>Jedilnik, rezervacije, delovni čas, lokacija in fotografije v urejeni predstavitvi, ki dobro deluje tudi na telefonu.</p>
-                              </div>
-                              <div class="hero-slide-visual"><img alt="Restaurant website preview" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'><rect width='800' height='520' fill='%230f1730'/><rect x='28' y='24' width='744' height='472' rx='24' fill='%23162142' stroke='%23354a77'/><rect x='56' y='58' width='220' height='16' rx='8' fill='%23c4b5fd' opacity='0.9'/><rect x='56' y='98' width='688' height='132' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='82' y='124' width='234' height='80' rx='18' fill='%237dd3fc' opacity='0.20'/><rect x='340' y='124' width='170' height='18' rx='9' fill='%23eef2ff' opacity='0.12'/><rect x='340' y='156' width='220' height='12' rx='6' fill='%23eef2ff' opacity='0.08'/><rect x='340' y='178' width='180' height='12' rx='6' fill='%23eef2ff' opacity='0.08'/><rect x='56' y='260' width='320' height='164' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='398' y='260' width='346' height='74' rx='18' fill='%237dd3fc' opacity='0.14'/><rect x='398' y='350' width='346' height='74' rx='18' fill='%23c4b5fd' opacity='0.14'/></svg>" /></div>
-                           </div>
-                        </div>
-                        <div class="hero-slide">
-                           <div class="hero-slide-card">
-                              <div class="hero-slide-copy">
-                                 <div class="tag">Apartmaji</div>
-                                 <h3>Predstavitev za apartmaje, sobe ali turizem</h3>
-                                 <p>Fotogalerija, opis nastanitve, cenik, kontakt in hitre informacije za goste v bolj sodobni obliki.</p>
-                              </div>
-                              <div class="hero-slide-visual"><img alt="Tourism website preview" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'><rect width='800' height='520' fill='%230f1730'/><rect x='28' y='24' width='744' height='472' rx='24' fill='%23162142' stroke='%23354a77'/><rect x='54' y='54' width='690' height='24' rx='12' fill='%23eef2ff' opacity='0.10'/><rect x='54' y='104' width='430' height='170' rx='22' fill='%237dd3fc' opacity='0.20'/><rect x='506' y='104' width='238' height='170' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='534' y='132' width='136' height='16' rx='8' fill='%23c4b5fd' opacity='0.7'/><rect x='534' y='164' width='158' height='12' rx='6' fill='%23eef2ff' opacity='0.09'/><rect x='534' y='186' width='132' height='12' rx='6' fill='%23eef2ff' opacity='0.09'/><rect x='54' y='300' width='164' height='124' rx='18' fill='%23eef2ff' opacity='0.08'/><rect x='238' y='300' width='164' height='124' rx='18' fill='%23eef2ff' opacity='0.08'/><rect x='422' y='300' width='322' height='124' rx='18' fill='%23c4b5fd' opacity='0.16'/></svg>" /></div>
-                           </div>
-                        </div>
-                        <div class="hero-slide">
-                           <div class="hero-slide-card">
-                              <div class="hero-slide-copy">
-                                 <div class="tag">Prenova</div>
-                                 <h3>Prenova starejše poslovne spletne strani</h3>
-                                 <p>Bolj pregledna začetna stran, boljši mobilni prikaz in modernejši vtis za podjetja, ki že imajo spletno stran.</p>
-                              </div>
-                              <div class="hero-slide-visual"><img alt="Website redesign preview" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'><rect width='800' height='520' fill='%230f1730'/><rect x='28' y='24' width='744' height='472' rx='24' fill='%23162142' stroke='%23354a77'/><rect x='56' y='58' width='180' height='18' rx='9' fill='%23c4b5fd' opacity='0.8'/><rect x='56' y='102' width='688' height='118' rx='22' fill='%23eef2ff' opacity='0.08'/><rect x='56' y='246' width='324' height='176' rx='22' fill='%237dd3fc' opacity='0.16'/><rect x='402' y='246' width='342' height='78' rx='18' fill='%23eef2ff' opacity='0.08'/><rect x='402' y='344' width='342' height='78' rx='18' fill='%23eef2ff' opacity='0.08'/></svg>" /></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="hero-slider-dots" id="heroSliderDots"><button class="hero-dot active"></button><button class="hero-dot"></button><button class="hero-dot"></button></div>
-                  </div>
-               </div>
-               <aside class="card contact-card" id="contact">
-                  <div>
-                     <div class="tag">Kontakt</div>
-                     <h2>Na voljo za manjše projekte, prenove strani in dolgoročno sodelovanje.</h2>
-                     <p class="muted" style="margin-top:12px;">Največ sodelujem z lokalnimi podjetji, gostinci, apartmaji, storitvenimi dejavnostmi in manjšimi blagovnimi znamkami, ki potrebujejo zanesljivo spletno podporo.</p>
-                  </div>
-                  <div class="contact-block">
-                     <div class="contact-label">E-pošta</div>
-                     <div class="contact-value">your@email.com</div>
-                  </div>
-                  <div class="contact-block">
-                     <div class="contact-label">WhatsApp</div>
-                     <div class="contact-value">+386 XX XXX XXX</div>
-                  </div>
-                  <div class="contact-block">
-                     <div class="contact-label">Telegram</div>
-                     <div class="contact-value">@yourhandle</div>
-                  </div>
-                  <div class="contact-block">
-                     <div class="contact-label">Lokacija</div>
-                     <div class="contact-value">Koper, Slovenija</div>
-                  </div>
-               </aside>
-            </div>
-         </section>
-         <section class="section" id="services">
-            <div class="container">
-               <div class="section-head">
-                  <div>
-                     <div class="tag">Storitve</div>
-                     <h2>Kaj lahko pripravim za vaše podjetje</h2>
-                  </div>
-                  <p class="section-copy">Ponudba je namenjena predvsem manjšim podjetjem, ki želijo urejeno spletno predstavitev brez zapletenega procesa in nepotrebnih stroškov.</p>
-               </div>
-               <div class="services-grid">
-                  <article class="service">
-                     <div class="tag">Spletna stran</div>
-                     <h3>Predstavitvene spletne strani</h3>
-                     <p>Za podjetja, obrtnike, lokale, apartmaje in druge storitvene dejavnosti, ki potrebujejo sodobno in zaupanja vredno spletno prisotnost.</p>
-                     <ul class="list">
-                        <li>Predstavitev podjetja ali dejavnosti</li>
-                        <li>Jasna struktura storitev</li>
-                        <li>Prilagoditev za telefon in tablico</li>
-                     </ul>
-                  </article>
-                  <article class="service">
-                     <div class="tag">Trgovina</div>
-                     <h3>Manjše spletne trgovine</h3>
-                     <p>Postavitev enostavne spletne trgovine za prodajo izdelkov, daril, lokalnih produktov ali posebne ponudbe.</p>
-                     <ul class="list">
-                        <li>Osnovna postavitev trgovine</li>
-                        <li>Strani izdelkov in kategorij</li>
-                        <li>Nastavitev plačil in oddaje naročil</li>
-                     </ul>
-                  </article>
-                  <article class="service">
-                     <div class="tag">Landing stran</div>
-                     <h3>Prodajne in kampanjske strani</h3>
-                     <p>Enostranske strani za posamezno ponudbo, akcijo, storitev ali oglaševalsko kampanjo.</p>
-                     <ul class="list">
-                        <li>Stran za storitev ali akcijo</li>
-                        <li>Poudarek na povpraševanjih</li>
-                        <li>Čist in pregleden nastop</li>
-                     </ul>
-                  </article>
-                  <article class="service">
-                     <div class="tag">Prenova</div>
-                     <h3>Prenova obstoječe strani</h3>
-                     <p>Če spletna stran že obstaja, vendar deluje zastarelo, nepregledno ali slabo na telefonu, jo lahko posodobim.</p>
-                     <ul class="list">
-                        <li>Osvežitev izgleda</li>
-                        <li>Boljša preglednost vsebine</li>
-                        <li>Hitrejše delovanje in mobilni prikaz</li>
-                     </ul>
-                  </article>
-                  <article class="service">
-                     <div class="tag">Integracije</div>
-                     <h3>Obrazci, rezervacije in povezave</h3>
-                     <p>Po potrebi lahko dodam kontaktne obrazce, povpraševanja, rezervacije ali osnovne povezave z drugimi orodji.</p>
-                     <ul class="list">
-                        <li>Kontaktni obrazci</li>
-                        <li>Povpraševalni ali rezervacijski obrazci</li>
-                        <li>Osnovne povezave s plačili ali e-pošto</li>
-                     </ul>
-                  </article>
-                  <article class="service">
-                     <div class="tag">Podpora</div>
-                     <h3>Vzdrževanje in manjše spremembe</h3>
-                     <p>Po objavi lahko skrbim za manjše popravke, zamenjavo vsebine, posodobitve in splošno tehnično podporo.</p>
-                     <ul class="list">
-                        <li>Popravki vsebine</li>
-                        <li>Manjše tehnične spremembe</li>
-                        <li>Osnovno vzdrževanje strani</li>
-                     </ul>
-                  </article>
-               </div>
-            </div>
-         </section>
-         <section class="section" id="pricing">
-            <div class="container">
-               <div class="section-head">
-                  <div>
-                     <div class="tag">Paketi</div>
-                     <h2>Jasni paketi za manjša podjetja</h2>
-                  </div>
-                  <p class="section-copy">Paketi so zastavljeni tako, da stranka hitro razume, kaj dobi in v kakšnem cenovnem okvirju.</p>
-               </div>
-               <div class="pricing-grid">
-                  <article class="pricing">
-                     <div class="tag">Osnovni</div>
-                     <h3>Osnovna spletna stran</h3>
-                     <div class="pricing-price">od 250 €</div>
-                     <div class="pricing-note">Primerno za manjše dejavnosti, posamezne storitve ali preprosto spletno predstavitev.</div>
-                     <ul class="list">
-                        <li>1 stran z osnovnimi informacijami</li>
-                        <li>Prilagojeno za mobilne naprave</li>
-                        <li>Kontaktni obrazec ali kontaktni podatki</li>
-                        <li>Osnovna priprava za objavo</li>
-                     </ul>
-                  </article>
-                  <article class="pricing featured">
-                     <div class="featured-badge">Najpogostejša izbira</div>
-                     <div class="tag">Poslovni</div>
-                     <h3>Poslovna spletna stran</h3>
-                     <div class="pricing-price">od 600 €</div>
-                     <div class="pricing-note">Za podjetja, ki želijo urejeno, pregledno in bolj celovito spletno predstavitev.</div>
-                     <ul class="list">
-                        <li>Do 5 podstrani</li>
-                        <li>Prilagojena struktura in vsebina</li>
-                        <li>Mobilna in osnovna hitrostna optimizacija</li>
-                        <li>Kontaktni ali povpraševalni obrazec</li>
-                        <li>Osnovna SEO postavitev</li>
-                     </ul>
-                  </article>
-                  <article class="pricing">
-                     <div class="tag">Trgovina</div>
-                     <h3>Manjša spletna trgovina</h3>
-                     <div class="pricing-price">od 900 €</div>
-                     <div class="pricing-note">Za podjetja, ki želijo začeti spletno prodajo z jasnim in preprostim sistemom.</div>
-                     <ul class="list">
-                        <li>Postavitev manjše trgovine</li>
-                        <li>Strani izdelkov in kategorij</li>
-                        <li>Nastavitev naročil in osnovnih plačil</li>
-                        <li>Osnovna vizualna prilagoditev</li>
-                        <li>Podpora pri objavi</li>
-                     </ul>
-                  </article>
-               </div>
-            </div>
-         </section>
-         <section class="section">
-            <div class="container">
-               <div class="section-head">
-                  <div>
-                     <div class="tag">Zakaj sodelovati</div>
-                     <h2>Lokalna in praktična alternativa večjim agencijam</h2>
-                  </div>
-                  <p class="section-copy">Poudarek je na enostavni komunikaciji, poštenem dogovoru in rešitvah, ki so dejansko uporabne za manjša podjetja.</p>
-               </div>
-               <div class="proof-grid">
-                  <article class="proof">
-                     <h3>Neposreden stik</h3>
-                     <p>Komunikacija je neposredna, brez posrednikov, zato je dogovor hitrejši in bolj jasen.</p>
-                  </article>
-                  <article class="proof">
-                     <h3>Rešitve za realne potrebe</h3>
-                     <p>Cilj je spletna stran, ki podjetje lepo predstavi in obiskovalcu hitro poda bistvene informacije.</p>
-                  </article>
-                  <article class="proof">
-                     <h3>Primerno za manjše naročnike</h3>
-                     <p>Ponudba je prilagojena lokalnim podjetjem, ki ne potrebujejo velike agencije, ampak zanesljivega izvajalca.</p>
-                  </article>
-               </div>
-            </div>
-         </section>
-         <section class="section" id="about">
-            <div class="container about-wrap">
-               <article class="about">
-                  <div class="tag">O meni</div>
-                  <h2>Spletne rešitve za lokalna podjetja</h2>
-                  <p style="margin-top:14px;">Papa D Labs je usmerjen v izdelavo spletnih strani za manjša podjetja, storitvene dejavnosti, gostince, apartmaje in druge lokalne ponudnike. Poudarek je na jasni predstavitvi, dobrem prvem vtisu in strani, ki deluje tudi na telefonu.</p>
-                  <p>Največ smisla imajo projekti, kjer podjetje potrebuje novo spletno stran, prenovo obstoječe strani ali enostavno spletno rešitev brez nepotrebne kompleksnosti.</p>
-               </article>
-               <div class="faq">
-                  <article class="faq-item">
-                     <div class="faq-question">Kako hitro lahko začnemo?</div>
-                     <div class="faq-answer">Pri manjših projektih lahko običajno začnemo hitro, ko se dogovorimo glede vsebine, obsega in cilja strani.</div>
-                  </article>
-                  <article class="faq-item">
-                     <div class="faq-question">Ali delate samo za podjetja na Obali?</div>
-                     <div class="faq-answer">Ne. Sodelujem z naročniki iz Kopra in Primorske, po dogovoru pa tudi drugod po Sloveniji.</div>
-                  </article>
-                  <article class="faq-item">
-                     <div class="faq-question">Ali je možna tudi kasnejša podpora?</div>
-                     <div class="faq-answer">Da. Po objavi strani lahko uredim manjše spremembe, dopolnitve vsebine ali osnovno vzdrževanje.</div>
-                  </article>
-               </div>
-            </div>
-         </section>
-         <section class="section" id="languages">
-            <div class="container">
-               <div class="section-head">
-                  <div>
-                     <div class="tag">Jeziki</div>
-                     <h2>Podpora tudi za širši trg</h2>
-                  </div>
-                  <p class="section-copy">Za začetek je poudarek na slovenskem trgu, po potrebi pa se lahko vsebina pripravi tudi za druge jezike.</p>
-               </div>
-               <div class="langs-grid">
-                  <article class="lang">
-                     <div class="language-name">Slovenščina</div>
-                     <p>Slovenščina kot glavna izbira za lokalna podjetja in komunikacijo.</p>
-                  </article>
-                  <article class="lang">
-                     <div class="language-name">Italiano</div>
-                     <p>Italijanščina za bližnje čezmejne naročnike in turizem.</p>
-                  </article>
-                  <article class="lang">
-                     <div class="language-name">English</div>
-                     <p>Angleščina za mednarodno predstavitev ali kasnejšo širitev.</p>
-                  </article>
-                  <article class="lang">
-                     <div class="language-name">Deutsch</div>
-                     <p>Nemščina za avstrijski trg in predstavitev storitev v širši regiji.</p>
-                  </article>
-               </div>
-            </div>
-         </section>
-      </main>
-      <footer class="footer">
-         <div class="container footer-row">
-            <div>© 2026 Papa D Labs. Izdelava spletnih strani in manjše spletne rešitve.</div>
-            <div>Koper · Slovenija</div>
-         </div>
-      </footer>
-      <script>
-         const topSliderTrack=document.getElementById('topSliderTrack');const topDots=[...document.querySelectorAll('.top-dot')];let topIndex=0,topTimer;function updateTopSlider(index){topIndex=index;topSliderTrack.style.transform=`translateX(-${index*100}%)`;topDots.forEach((dot,i)=>dot.classList.toggle('active',i===index));}function startTopSlider(){clearInterval(topTimer);topTimer=setInterval(()=>{topIndex=(topIndex+1)%topDots.length;updateTopSlider(topIndex);},5000);}topDots.forEach((dot,index)=>dot.addEventListener('click',()=>{updateTopSlider(index);startTopSlider();}));updateTopSlider(0);startTopSlider();
-         const heroSlides=document.getElementById('heroSlides');const heroDots=[...document.querySelectorAll('.hero-dot')];let heroIndex=0,heroTimer;function updateHeroSlider(index){heroIndex=index;heroSlides.style.transform=`translateX(-${index*100}%)`;heroDots.forEach((dot,i)=>dot.classList.toggle('active',i===index));}function startHeroSlider(){clearInterval(heroTimer);heroTimer=setInterval(()=>{heroIndex=(heroIndex+1)%heroDots.length;updateHeroSlider(heroIndex);},4200);}heroDots.forEach((dot,index)=>dot.addEventListener('click',()=>{updateHeroSlider(index);startHeroSlider();}));updateHeroSlider(0);startHeroSlider();
-           
-      </script>
-   </body>
+          </div>
+        </div>
+
+        <aside class="card contact-card" id="contact">
+          <div>
+            <div class="tag" data-i18n="contactTag">Kontakt</div>
+            <h2 data-i18n="contactTitle">Na voljo za manjše projekte, prenove strani in dolgoročno sodelovanje.</h2>
+            <p class="muted" style="margin-top: 12px;" data-i18n="contactLead">
+              Največ sodelujem z lokalnimi podjetji, gostinci, apartmaji, storitvenimi dejavnostmi in manjšimi blagovnimi znamkami, ki potrebujejo zanesljivo spletno podporo.
+            </p>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-label" data-i18n="emailLabel">E-pošta</div>
+            <div class="contact-value">your@email.com</div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-value">+386 XX XXX XXX</div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-label">Telegram</div>
+            <div class="contact-value">@yourhandle</div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-label" data-i18n="baseLabel">Lokacija</div>
+            <div class="contact-value" data-i18n="baseValue">Koper, Slovenija</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tag" data-i18n="servicesTag">Storitve</div>
+            <h2 data-i18n="servicesTitle">Kaj lahko pripravim za vaše podjetje</h2>
+          </div>
+          <p class="section-copy" data-i18n="servicesCopy">
+            Ponudba je namenjena predvsem manjšim podjetjem, ki želijo urejeno spletno predstavitev brez zapletenega procesa in nepotrebnih stroškov.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service">
+            <div class="tag" data-i18n="service1Tag">Spletna stran</div>
+            <h3 data-i18n="service1Title">Predstavitvene spletne strani</h3>
+            <p data-i18n="service1Desc">Za podjetja, obrtnike, lokale, apartmaje in druge storitvene dejavnosti, ki potrebujejo sodobno in zaupanja vredno spletno prisotnost.</p>
+            <ul class="list">
+              <li data-i18n="service1Item1">Predstavitev podjetja ali dejavnosti</li>
+              <li data-i18n="service1Item2">Jasna struktura storitev</li>
+              <li data-i18n="service1Item3">Prilagoditev za telefon in tablico</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="tag" data-i18n="service2Tag">Trgovina</div>
+            <h3 data-i18n="service2Title">Manjše spletne trgovine</h3>
+            <p data-i18n="service2Desc">Postavitev enostavne spletne trgovine za prodajo izdelkov, daril, lokalnih produktov ali posebne ponudbe.</p>
+            <ul class="list">
+              <li data-i18n="service2Item1">Osnovna postavitev trgovine</li>
+              <li data-i18n="service2Item2">Strani izdelkov in kategorij</li>
+              <li data-i18n="service2Item3">Nastavitev plačil in oddaje naročil</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="tag" data-i18n="service3Tag">Landing stran</div>
+            <h3 data-i18n="service3Title">Prodajne in kampanjske strani</h3>
+            <p data-i18n="service3Desc">Enostranske strani za posamezno ponudbo, akcijo, storitev ali oglaševalsko kampanjo.</p>
+            <ul class="list">
+              <li data-i18n="service3Item1">Stran za storitev ali akcijo</li>
+              <li data-i18n="service3Item2">Poudarek na povpraševanjih</li>
+              <li data-i18n="service3Item3">Čist in pregleden nastop</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="tag" data-i18n="service4Tag">Prenova</div>
+            <h3 data-i18n="service4Title">Prenova obstoječe strani</h3>
+            <p data-i18n="service4Desc">Če spletna stran že obstaja, vendar deluje zastarelo, nepregledno ali slabo na telefonu, jo lahko posodobim.</p>
+            <ul class="list">
+              <li data-i18n="service4Item1">Osvežitev izgleda</li>
+              <li data-i18n="service4Item2">Boljša preglednost vsebine</li>
+              <li data-i18n="service4Item3">Hitrejše delovanje in mobilni prikaz</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="tag" data-i18n="service5Tag">Integracije</div>
+            <h3 data-i18n="service5Title">Obrazci, rezervacije in povezave</h3>
+            <p data-i18n="service5Desc">Po potrebi lahko dodam kontaktne obrazce, povpraševanja, rezervacije ali osnovne povezave z drugimi orodji.</p>
+            <ul class="list">
+              <li data-i18n="service5Item1">Kontaktni obrazci</li>
+              <li data-i18n="service5Item2">Povpraševalni ali rezervacijski obrazci</li>
+              <li data-i18n="service5Item3">Osnovne povezave s plačili ali e-pošto</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <div class="tag" data-i18n="service6Tag">Podpora</div>
+            <h3 data-i18n="service6Title">Vzdrževanje in manjše spremembe</h3>
+            <p data-i18n="service6Desc">Po objavi lahko skrbim za manjše popravke, zamenjavo vsebine, posodobitve in splošno tehnično podporo.</p>
+            <ul class="list">
+              <li data-i18n="service6Item1">Popravki vsebine</li>
+              <li data-i18n="service6Item2">Manjše tehnične spremembe</li>
+              <li data-i18n="service6Item3">Osnovno vzdrževanje strani</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tag" data-i18n="pricingTag">Paketi</div>
+            <h2 data-i18n="pricingTitle">Jasni paketi za manjša podjetja</h2>
+          </div>
+          <p class="section-copy" data-i18n="pricingCopy">
+            Paketi so zastavljeni tako, da stranka hitro razume, kaj dobi in v kakšnem cenovnem okvirju.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing">
+            <div class="tag" data-i18n="pack1Tag">Osnovni</div>
+            <h3 data-i18n="pack1Title">Osnovna spletna stran</h3>
+            <div class="pricing-price" data-i18n="pack1Price">od 250 €</div>
+            <div class="pricing-note" data-i18n="pack1Note">Primerno za manjše dejavnosti, posamezne storitve ali preprosto spletno predstavitev.</div>
+            <ul class="list">
+              <li data-i18n="pack1Item1">1 stran z osnovnimi informacijami</li>
+              <li data-i18n="pack1Item2">Prilagojeno za mobilne naprave</li>
+              <li data-i18n="pack1Item3">Kontaktni obrazec ali kontaktni podatki</li>
+              <li data-i18n="pack1Item4">Osnovna priprava za objavo</li>
+            </ul>
+          </article>
+
+          <article class="pricing featured">
+            <div class="featured-badge" data-i18n="popularBadge">Najpogostejša izbira</div>
+            <div class="tag" data-i18n="pack2Tag">Poslovni</div>
+            <h3 data-i18n="pack2Title">Poslovna spletna stran</h3>
+            <div class="pricing-price" data-i18n="pack2Price">od 600 €</div>
+            <div class="pricing-note" data-i18n="pack2Note">Za podjetja, ki želijo urejeno, pregledno in bolj celovito spletno predstavitev.</div>
+            <ul class="list">
+              <li data-i18n="pack2Item1">Do 5 podstrani</li>
+              <li data-i18n="pack2Item2">Prilagojena struktura in vsebina</li>
+              <li data-i18n="pack2Item3">Mobilna in osnovna hitrostna optimizacija</li>
+              <li data-i18n="pack2Item4">Kontaktni ali povpraševalni obrazec</li>
+              <li data-i18n="pack2Item5">Osnovna SEO postavitev</li>
+            </ul>
+          </article>
+
+          <article class="pricing">
+            <div class="tag" data-i18n="pack3Tag">Trgovina</div>
+            <h3 data-i18n="pack3Title">Manjša spletna trgovina</h3>
+            <div class="pricing-price" data-i18n="pack3Price">od 900 €</div>
+            <div class="pricing-note" data-i18n="pack3Note">Za podjetja, ki želijo začeti spletno prodajo z jasnim in preprostim sistemom.</div>
+            <ul class="list">
+              <li data-i18n="pack3Item1">Postavitev manjše trgovine</li>
+              <li data-i18n="pack3Item2">Strani izdelkov in kategorij</li>
+              <li data-i18n="pack3Item3">Nastavitev naročil in osnovnih plačil</li>
+              <li data-i18n="pack3Item4">Osnovna vizualna prilagoditev</li>
+              <li data-i18n="pack3Item5">Podpora pri objavi</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tag" data-i18n="whyTag">Zakaj sodelovati</div>
+            <h2 data-i18n="whyTitle">Lokalna in praktična alternativa večjim agencijam</h2>
+          </div>
+          <p class="section-copy" data-i18n="whyCopy">
+            Poudarek je na enostavni komunikaciji, poštenem dogovoru in rešitvah, ki so dejansko uporabne za manjša podjetja.
+          </p>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof">
+            <h3 data-i18n="why1Title">Neposreden stik</h3>
+            <p data-i18n="why1Desc">Komunikacija je neposredna, brez posrednikov, zato je dogovor hitrejši in bolj jasen.</p>
+          </article>
+          <article class="proof">
+            <h3 data-i18n="why2Title">Rešitve za realne potrebe</h3>
+            <p data-i18n="why2Desc">Cilj je spletna stran, ki podjetje lepo predstavi in obiskovalcu hitro poda bistvene informacije.</p>
+          </article>
+          <article class="proof">
+            <h3 data-i18n="why3Title">Primerno za manjše naročnike</h3>
+            <p data-i18n="why3Desc">Ponudba je prilagojena lokalnim podjetjem, ki ne potrebujejo velike agencije, ampak zanesljivega izvajalca.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-wrap">
+        <article class="about">
+          <div class="tag" data-i18n="aboutTag">O meni</div>
+          <h2 data-i18n="aboutTitle">Spletne rešitve za lokalna podjetja</h2>
+          <p style="margin-top: 14px;" data-i18n="aboutP1">
+            Papa D Labs je usmerjen v izdelavo spletnih strani za manjša podjetja, storitvene dejavnosti, gostince, apartmaje in druge lokalne ponudnike. Poudarek je na jasni predstavitvi, dobrem prvem vtisu in strani, ki deluje tudi na telefonu.
+          </p>
+          <p data-i18n="aboutP2">
+            Največ smisla imajo projekti, kjer podjetje potrebuje novo spletno stran, prenovo obstoječe strani ali enostavno spletno rešitev brez nepotrebne kompleksnosti.
+          </p>
+        </article>
+
+        <div class="faq">
+          <article class="faq-item">
+            <div class="faq-question" data-i18n="faq1Q">Kako hitro lahko začnemo?</div>
+            <div class="faq-answer" data-i18n="faq1A">Pri manjših projektih lahko običajno začnemo hitro, ko se dogovorimo glede vsebine, obsega in cilja strani.</div>
+          </article>
+          <article class="faq-item">
+            <div class="faq-question" data-i18n="faq2Q">Ali delate samo za podjetja na Obali?</div>
+            <div class="faq-answer" data-i18n="faq2A">Ne. Sodelujem z naročniki iz Kopra in Primorske, po dogovoru pa tudi drugod po Sloveniji.</div>
+          </article>
+          <article class="faq-item">
+            <div class="faq-question" data-i18n="faq3Q">Ali je možna tudi kasnejša podpora?</div>
+            <div class="faq-answer" data-i18n="faq3A">Da. Po objavi strani lahko uredim manjše spremembe, dopolnitve vsebine ali osnovno vzdrževanje.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tag" data-i18n="languagesTag">Jeziki</div>
+            <h2 data-i18n="languagesTitle">Podpora tudi za širši trg</h2>
+          </div>
+          <p class="section-copy" data-i18n="languagesCopy">
+            Za začetek je poudarek na slovenskem trgu, po potrebi pa se lahko vsebina pripravi tudi za druge jezike.
+          </p>
+        </div>
+
+        <div class="langs-grid">
+          <article class="lang">
+            <div class="language-name">Slovenščina</div>
+            <p data-i18n="langSlDesc">Slovenščina kot glavna izbira za lokalna podjetja in komunikacijo.</p>
+          </article>
+          <article class="lang">
+            <div class="language-name">Italiano</div>
+            <p data-i18n="langItDesc">Italijanščina za bližnje čezmejne naročnike in turizem.</p>
+          </article>
+          <article class="lang">
+            <div class="language-name">English</div>
+            <p data-i18n="langEnDesc">Angleščina za mednarodno predstavitev ali kasnejšo širitev.</p>
+          </article>
+          <article class="lang">
+            <div class="language-name">Deutsch</div>
+            <p data-i18n="langDeDesc">Nemščina za avstrijski trg in predstavitev storitev v širši regiji.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div data-i18n="footerLeft">© 2026 Papa D Labs. Izdelava spletnih strani in manjše spletne rešitve.</div>
+      <div data-i18n="footerRight">Koper · Slovenija</div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const translations = {
+        sl: {
+          navServices: 'Storitve', navPricing: 'Paketi', navAbout: 'O meni', navLanguages: 'Jeziki', navContact: 'Kontakt',
+          topSlide1Tag: 'Spletna predstavitev', topSlide1Title: 'Čist, sodoben nastop za manjša podjetja',
+          topSlide2Tag: 'E-trgovina', topSlide2Title: 'Preprosta trgovina za izdelke in naročila',
+          topSlide3Tag: 'Prenova', topSlide3Title: 'Boljša mobilna izkušnja in modernejši izgled',
+          topSlide4Tag: 'Podpora', topSlide4Title: 'Manjše spremembe, vzdrževanje in rast strani',
+          eyebrow: 'Koper · Obala · Slovenija',
+          heroTitle: 'Izdelava spletnih strani za manjša podjetja, lokale in storitvene dejavnosti.',
+          heroLead: 'Pomagam manjšim podjetjem na Obali in drugod po Sloveniji pri izdelavi preprostih, preglednih in sodobnih spletnih strani. Če potrebujete novo predstavitveno stran, prenovo obstoječe strani ali spletno trgovino, lahko pripravim rešitev, ki je jasna, hitra in prilagojena vašemu poslu.',
+          heroPoint1: 'Spletne strani za podjetja, lokale in storitve',
+          heroPoint2: 'Prenove obstoječih strani in osnovne spletne trgovine',
+          heroPoint3: 'Enostavna komunikacija in hitra izvedba',
+          heroPoint4: 'Lokalno iz Kopra, na voljo po Sloveniji',
+          heroCta1: 'Pošljite povpraševanje',
+          heroCta2: 'Poglejte storitve',
+          slide1Tag: 'Restavracija',
+          slide1Title: 'Spletna stran za restavracijo ali kavarno',
+          slide1Text: 'Jedilnik, rezervacije, delovni čas, lokacija in fotografije v urejeni predstavitvi, ki dobro deluje tudi na telefonu.',
+          slide2Tag: 'Apartmaji',
+          slide2Title: 'Predstavitev za apartmaje, sobe ali turizem',
+          slide2Text: 'Fotogalerija, opis nastanitve, cenik, kontakt in hitre informacije za goste v bolj sodobni obliki.',
+          slide3Tag: 'Prenova',
+          slide3Title: 'Prenova starejše poslovne spletne strani',
+          slide3Text: 'Bolj pregledna začetna stran, boljši mobilni prikaz in modernejši vtis za podjetja, ki že imajo spletno stran.',
+          contactTag: 'Kontakt',
+          contactTitle: 'Na voljo za manjše projekte, prenove strani in dolgoročno sodelovanje.',
+          contactLead: 'Največ sodelujem z lokalnimi podjetji, gostinci, apartmaji, storitvenimi dejavnostmi in manjšimi blagovnimi znamkami, ki potrebujejo zanesljivo spletno podporo.',
+          emailLabel: 'E-pošta',
+          baseLabel: 'Lokacija',
+          baseValue: 'Koper, Slovenija',
+          servicesTag: 'Storitve',
+          servicesTitle: 'Kaj lahko pripravim za vaše podjetje',
+          servicesCopy: 'Ponudba je namenjena predvsem manjšim podjetjem, ki želijo urejeno spletno predstavitev brez zapletenega procesa in nepotrebnih stroškov.',
+          service1Tag: 'Spletna stran',
+          service1Title: 'Predstavitvene spletne strani',
+          service1Desc: 'Za podjetja, obrtnike, lokale, apartmaje in druge storitvene dejavnosti, ki potrebujejo sodobno in zaupanja vredno spletno prisotnost.',
+          service1Item1: 'Predstavitev podjetja ali dejavnosti',
+          service1Item2: 'Jasna struktura storitev',
+          service1Item3: 'Prilagoditev za telefon in tablico',
+          service2Tag: 'Trgovina',
+          service2Title: 'Manjše spletne trgovine',
+          service2Desc: 'Postavitev enostavne spletne trgovine za prodajo izdelkov, daril, lokalnih produktov ali posebne ponudbe.',
+          service2Item1: 'Osnovna postavitev trgovine',
+          service2Item2: 'Strani izdelkov in kategorij',
+          service2Item3: 'Nastavitev plačil in oddaje naročil',
+          service3Tag: 'Landing stran',
+          service3Title: 'Prodajne in kampanjske strani',
+          service3Desc: 'Enostranske strani za posamezno ponudbo, akcijo, storitev ali oglaševalsko kampanjo.',
+          service3Item1: 'Stran za storitev ali akcijo',
+          service3Item2: 'Poudarek na povpraševanjih',
+          service3Item3: 'Čist in pregleden nastop',
+          service4Tag: 'Prenova',
+          service4Title: 'Prenova obstoječe strani',
+          service4Desc: 'Če spletna stran že obstaja, vendar deluje zastarelo, nepregledno ali slabo na telefonu, jo lahko posodobim.',
+          service4Item1: 'Osvežitev izgleda',
+          service4Item2: 'Boljša preglednost vsebine',
+          service4Item3: 'Hitrejše delovanje in mobilni prikaz',
+          service5Tag: 'Integracije',
+          service5Title: 'Obrazci, rezervacije in povezave',
+          service5Desc: 'Po potrebi lahko dodam kontaktne obrazce, povpraševanja, rezervacije ali osnovne povezave z drugimi orodji.',
+          service5Item1: 'Kontaktni obrazci',
+          service5Item2: 'Povpraševalni ali rezervacijski obrazci',
+          service5Item3: 'Osnovne povezave s plačili ali e-pošto',
+          service6Tag: 'Podpora',
+          service6Title: 'Vzdrževanje in manjše spremembe',
+          service6Desc: 'Po objavi lahko skrbim za manjše popravke, zamenjavo vsebine, posodobitve in splošno tehnično podporo.',
+          service6Item1: 'Popravki vsebine',
+          service6Item2: 'Manjše tehnične spremembe',
+          service6Item3: 'Osnovno vzdrževanje strani',
+          pricingTag: 'Paketi',
+          pricingTitle: 'Jasni paketi za manjša podjetja',
+          pricingCopy: 'Paketi so zastavljeni tako, da stranka hitro razume, kaj dobi in v kakšnem cenovnem okvirju.',
+          pack1Tag: 'Osnovni',
+          pack1Title: 'Osnovna spletna stran',
+          pack1Price: 'od 250 €',
+          pack1Note: 'Primerno za manjše dejavnosti, posamezne storitve ali preprosto spletno predstavitev.',
+          pack1Item1: '1 stran z osnovnimi informacijami',
+          pack1Item2: 'Prilagojeno za mobilne naprave',
+          pack1Item3: 'Kontaktni obrazec ali kontaktni podatki',
+          pack1Item4: 'Osnovna priprava za objavo',
+          popularBadge: 'Najpogostejša izbira',
+          pack2Tag: 'Poslovni',
+          pack2Title: 'Poslovna spletna stran',
+          pack2Price: 'od 600 €',
+          pack2Note: 'Za podjetja, ki želijo urejeno, pregledno in bolj celovito spletno predstavitev.',
+          pack2Item1: 'Do 5 podstrani',
+          pack2Item2: 'Prilagojena struktura in vsebina',
+          pack2Item3: 'Mobilna in osnovna hitrostna optimizacija',
+          pack2Item4: 'Kontaktni ali povpraševalni obrazec',
+          pack2Item5: 'Osnovna SEO postavitev',
+          pack3Tag: 'Trgovina',
+          pack3Title: 'Manjša spletna trgovina',
+          pack3Price: 'od 900 €',
+          pack3Note: 'Za podjetja, ki želijo začeti spletno prodajo z jasnim in preprostim sistemom.',
+          pack3Item1: 'Postavitev manjše trgovine',
+          pack3Item2: 'Strani izdelkov in kategorij',
+          pack3Item3: 'Nastavitev naročil in osnovnih plačil',
+          pack3Item4: 'Osnovna vizualna prilagoditev',
+          pack3Item5: 'Podpora pri objavi',
+          whyTag: 'Zakaj sodelovati',
+          whyTitle: 'Lokalna in praktična alternativa večjim agencijam',
+          whyCopy: 'Poudarek je na enostavni komunikaciji, poštenem dogovoru in rešitvah, ki so dejansko uporabne za manjša podjetja.',
+          why1Title: 'Neposreden stik',
+          why1Desc: 'Komunikacija je neposredna, brez posrednikov, zato je dogovor hitrejši in bolj jasen.',
+          why2Title: 'Rešitve za realne potrebe',
+          why2Desc: 'Cilj je spletna stran, ki podjetje lepo predstavi in obiskovalcu hitro poda bistvene informacije.',
+          why3Title: 'Primerno za manjše naročnike',
+          why3Desc: 'Ponudba je prilagojena lokalnim podjetjem, ki ne potrebujejo velike agencije, ampak zanesljivega izvajalca.',
+          aboutTag: 'O meni',
+          aboutTitle: 'Spletne rešitve za lokalna podjetja',
+          aboutP1: 'Papa D Labs je usmerjen v izdelavo spletnih strani za manjša podjetja, storitvene dejavnosti, gostince, apartmaje in druge lokalne ponudnike. Poudarek je na jasni predstavitvi, dobrem prvem vtisu in strani, ki deluje tudi na telefonu.',
+          aboutP2: 'Največ smisla imajo projekti, kjer podjetje potrebuje novo spletno stran, prenovo obstoječe strani ali enostavno spletno rešitev brez nepotrebne kompleksnosti.',
+          faq1Q: 'Kako hitro lahko začnemo?',
+          faq1A: 'Pri manjših projektih lahko običajno začnemo hitro, ko se dogovorimo glede vsebine, obsega in cilja strani.',
+          faq2Q: 'Ali delate samo za podjetja na Obali?',
+          faq2A: 'Ne. Sodelujem z naročniki iz Kopra in Primorske, po dogovoru pa tudi drugod po Sloveniji.',
+          faq3Q: 'Ali je možna tudi kasnejša podpora?',
+          faq3A: 'Da. Po objavi strani lahko uredim manjše spremembe, dopolnitve vsebine ali osnovno vzdrževanje.',
+          languagesTag: 'Jeziki',
+          languagesTitle: 'Podpora tudi za širši trg',
+          languagesCopy: 'Za začetek je poudarek na slovenskem trgu, po potrebi pa se lahko vsebina pripravi tudi za druge jezike.',
+          langSlDesc: 'Slovenščina kot glavna izbira za lokalna podjetja in komunikacijo.',
+          langItDesc: 'Italijanščina za bližnje čezmejne naročnike in turizem.',
+          langEnDesc: 'Angleščina za mednarodno predstavitev ali kasnejšo širitev.',
+          langDeDesc: 'Nemščina za avstrijski trg in predstavitev storitev v širši regiji.',
+          footerLeft: '© 2026 Papa D Labs. Izdelava spletnih strani in manjše spletne rešitve.',
+          footerRight: 'Koper · Slovenija'
+        },
+        it: {
+          navServices: 'Servizi', navPricing: 'Pacchetti', navAbout: 'Chi sono', navLanguages: 'Lingue', navContact: 'Contatto',
+          topSlide1Tag: 'Presentazione', topSlide1Title: 'Aspetto pulito e moderno per piccole imprese',
+          topSlide2Tag: 'E-commerce', topSlide2Title: 'Piccolo shop online per prodotti e ordini',
+          topSlide3Tag: 'Restyling', topSlide3Title: 'Migliore esperienza mobile e look più moderno',
+          topSlide4Tag: 'Supporto', topSlide4Title: 'Piccole modifiche, manutenzione e crescita del sito',
+          eyebrow: 'Capodistria · Costa · Slovenia',
+          heroTitle: 'Siti web per piccole imprese, locali e attività di servizio.',
+          heroLead: 'Aiuto piccole imprese della costa slovena e di altre zone della Slovenia a creare siti web semplici, moderni e facili da usare. Se ti serve un sito vetrina, un restyling o un piccolo shop online, posso preparare una soluzione pratica adatta alla tua attività.',
+          heroPoint1: 'Siti per aziende, locali e servizi',
+          heroPoint2: 'Restyling e piccoli shop online',
+          heroPoint3: 'Comunicazione semplice e consegna rapida',
+          heroPoint4: 'Base a Capodistria, disponibile in Slovenia',
+          heroCta1: 'Richiedi un preventivo',
+          heroCta2: 'Scopri i servizi',
+          slide1Tag: 'Ristorante',
+          slide1Title: 'Sito per ristorante o caffetteria',
+          slide1Text: 'Menu, prenotazioni, orari, posizione e foto in una presentazione ordinata che funziona bene anche su mobile.',
+          slide2Tag: 'Appartamenti',
+          slide2Title: 'Presentazione per appartamenti o turismo',
+          slide2Text: 'Galleria fotografica, dettagli dell’alloggio, prezzi, contatti e informazioni rapide per gli ospiti in una forma più moderna.',
+          slide3Tag: 'Restyling',
+          slide3Title: 'Aggiornamento di un sito aziendale più vecchio',
+          slide3Text: 'Homepage più chiara, migliore visualizzazione mobile e un’impressione più moderna per aziende che hanno già un sito.',
+          contactTag: 'Contatto',
+          contactTitle: 'Disponibile per piccoli progetti, restyling di siti e supporto continuativo.',
+          contactLead: 'Ideale per attività locali, ristoranti, appartamenti, servizi e piccoli brand che hanno bisogno di un supporto web affidabile.',
+          emailLabel: 'Email',
+          baseLabel: 'Sede',
+          baseValue: 'Capodistria, Slovenia',
+          servicesTag: 'Servizi',
+          servicesTitle: 'Cosa posso realizzare per la tua attività',
+          servicesCopy: 'L’offerta è pensata soprattutto per piccole aziende che vogliono una presenza online ordinata senza processi complicati o costi inutili.',
+          service1Tag: 'Sito',
+          service1Title: 'Siti vetrina',
+          service1Desc: 'Per aziende, artigiani, locali, appartamenti e attività di servizio che hanno bisogno di una presenza online moderna e affidabile.',
+          service1Item1: 'Presentazione dell’azienda o del servizio',
+          service1Item2: 'Struttura chiara dei servizi',
+          service1Item3: 'Layout ottimizzato per mobile',
+          service2Tag: 'Shop',
+          service2Title: 'Piccoli negozi online',
+          service2Desc: 'Semplici shop online per vendere prodotti, regali, articoli locali o un’offerta specifica.',
+          service2Item1: 'Setup base del negozio',
+          service2Item2: 'Pagine prodotto e categorie',
+          service2Item3: 'Ordini e configurazione pagamenti',
+          service3Tag: 'Landing',
+          service3Title: 'Pagine vendita e campagne',
+          service3Desc: 'Siti a pagina singola per un’offerta, una campagna, un servizio o una promozione specifica.',
+          service3Item1: 'Pagina per un servizio o offerta',
+          service3Item2: 'Focus sulle richieste',
+          service3Item3: 'Presentazione pulita e chiara',
+          service4Tag: 'Restyling',
+          service4Title: 'Restyling sito esistente',
+          service4Desc: 'Se il sito attuale sembra vecchio, poco chiaro o funziona male su mobile, posso aggiornarlo.',
+          service4Item1: 'Aggiornamento visivo',
+          service4Item2: 'Struttura contenuti migliore',
+          service4Item3: 'Più veloce e più adatto al mobile',
+          service5Tag: 'Integrazioni',
+          service5Title: 'Form, prenotazioni e collegamenti',
+          service5Desc: 'Posso aggiungere form di contatto, richieste, prenotazioni o semplici collegamenti con gli strumenti che già usi.',
+          service5Item1: 'Form di contatto',
+          service5Item2: 'Form richieste o prenotazioni',
+          service5Item3: 'Semplici collegamenti con pagamenti o email',
+          service6Tag: 'Supporto',
+          service6Title: 'Manutenzione e piccole modifiche',
+          service6Desc: 'Dopo la pubblicazione posso occuparmi di piccole modifiche, aggiornamenti dei contenuti e supporto tecnico generale.',
+          service6Item1: 'Modifiche ai contenuti',
+          service6Item2: 'Piccoli cambi tecnici',
+          service6Item3: 'Manutenzione di base',
+          pricingTag: 'Pacchetti',
+          pricingTitle: 'Pacchetti chiari per piccole imprese',
+          pricingCopy: 'Questi pacchetti aiutano il cliente a capire velocemente cosa riceve e in quale fascia di prezzo.',
+          pack1Tag: 'Base',
+          pack1Title: 'Sito base',
+          pack1Price: 'da €250',
+          pack1Note: 'Adatto a piccole attività, singoli servizi o una presenza online semplice.',
+          pack1Item1: '1 pagina con informazioni principali',
+          pack1Item2: 'Layout responsive',
+          pack1Item3: 'Modulo contatto o dati di contatto',
+          pack1Item4: 'Preparazione base alla pubblicazione',
+          popularBadge: 'Scelta più comune',
+          pack2Tag: 'Business',
+          pack2Title: 'Sito business',
+          pack2Price: 'da €600',
+          pack2Note: 'Per aziende che vogliono una presenza online più completa e professionale.',
+          pack2Item1: 'Fino a 5 pagine',
+          pack2Item2: 'Struttura e contenuti personalizzati',
+          pack2Item3: 'Ottimizzazione mobile e velocità base',
+          pack2Item4: 'Modulo contatto o richiesta',
+          pack2Item5: 'Impostazione SEO base',
+          pack3Tag: 'Shop',
+          pack3Title: 'Piccolo negozio online',
+          pack3Price: 'da €900',
+          pack3Note: 'Per aziende che vogliono iniziare a vendere online con una struttura semplice e chiara.',
+          pack3Item1: 'Setup di un piccolo shop',
+          pack3Item2: 'Pagine prodotto e categorie',
+          pack3Item3: 'Configurazione ordini e pagamenti',
+          pack3Item4: 'Personalizzazione visiva base',
+          pack3Item5: 'Supporto al lancio',
+          whyTag: 'Perché collaborare',
+          whyTitle: 'Un’alternativa locale e pratica alle grandi agenzie',
+          whyCopy: 'L’attenzione è su comunicazione semplice, accordi chiari e soluzioni davvero utili per piccole imprese.',
+          why1Title: 'Contatto diretto',
+          why1Desc: 'La comunicazione è diretta, senza intermediari, quindi tutto è più veloce e più chiaro.',
+          why2Title: 'Soluzioni per esigenze reali',
+          why2Desc: 'L’obiettivo è un sito che presenti bene l’attività e dia ai visitatori le informazioni essenziali.',
+          why3Title: 'Pensato per piccoli clienti',
+          why3Desc: 'L’offerta è adatta a imprese locali che non hanno bisogno di una grande agenzia ma di uno sviluppatore affidabile.',
+          aboutTag: 'Chi sono',
+          aboutTitle: 'Soluzioni web per attività locali',
+          aboutP1: 'Papa D Labs è focalizzato su siti web per piccole imprese, servizi, ristoranti, appartamenti e altre attività locali. L’obiettivo principale è una presentazione chiara, una buona prima impressione e un sito che funzioni bene anche su mobile.',
+          aboutP2: 'I progetti più utili sono nuovi siti, restyling e soluzioni web semplici senza complessità inutili.',
+          faq1Q: 'Quanto velocemente possiamo iniziare?',
+          faq1A: 'Per i progetti più piccoli si può iniziare rapidamente, una volta definiti contenuti, obiettivi e portata del lavoro.',
+          faq2Q: 'Lavori solo con aziende della costa?',
+          faq2A: 'No. Collaboro con clienti di Capodistria e Primorska, ma anche altrove in Slovenia su accordo.',
+          faq3Q: 'È possibile avere supporto anche dopo il lancio?',
+          faq3A: 'Sì. Dopo la pubblicazione posso gestire piccole modifiche, aggiornamenti contenuti e manutenzione base.',
+          languagesTag: 'Lingue',
+          languagesTitle: 'Supporto anche per un mercato più ampio',
+          languagesCopy: 'Il focus iniziale è il mercato sloveno, ma il contenuto può essere adattato anche ad altre lingue quando serve.',
+          langSlDesc: 'Sloveno come scelta principale per il mercato locale.',
+          langItDesc: 'Italiano per clienti di confine e turismo.',
+          langEnDesc: 'Inglese per presentazione internazionale o futura espansione.',
+          langDeDesc: 'Tedesco per il mercato austriaco e una presentazione regionale più ampia.',
+          footerLeft: '© 2026 Papa D Labs. Realizzazione siti web e piccole soluzioni web.',
+          footerRight: 'Capodistria · Slovenia'
+        },
+        en: {
+          navServices: 'Services', navPricing: 'Pricing', navAbout: 'About', navLanguages: 'Languages', navContact: 'Contact',
+          topSlide1Tag: 'Presentation', topSlide1Title: 'Clean and modern look for small businesses',
+          topSlide2Tag: 'E-commerce', topSlide2Title: 'Simple online shop for products and orders',
+          topSlide3Tag: 'Redesign', topSlide3Title: 'Better mobile experience and more modern design',
+          topSlide4Tag: 'Support', topSlide4Title: 'Small updates, maintenance, and website growth',
+          eyebrow: 'Koper · Coast · Slovenia',
+          heroTitle: 'Web design for small businesses, local venues, and service companies.',
+          heroLead: 'I help small businesses on the Slovenian coast and across Slovenia with clean, modern, and easy-to-use websites. Whether you need a simple presentation site, a redesign, or a small online shop, I can build a practical solution that fits your business.',
+          heroPoint1: 'Websites for companies, local venues, and services',
+          heroPoint2: 'Redesigns and small online shops',
+          heroPoint3: 'Simple communication and fast delivery',
+          heroPoint4: 'Based in Koper, available across Slovenia',
+          heroCta1: 'Request a quote',
+          heroCta2: 'Explore services',
+          slide1Tag: 'Restaurant',
+          slide1Title: 'Website for a restaurant or café',
+          slide1Text: 'Menu, reservations, opening hours, location, and photos in a clean layout that works well on mobile.',
+          slide2Tag: 'Apartments',
+          slide2Title: 'Presentation site for apartments or tourism',
+          slide2Text: 'Photo gallery, accommodation details, pricing, contact, and quick information for guests in a more modern layout.',
+          slide3Tag: 'Redesign',
+          slide3Title: 'Refresh of an older business website',
+          slide3Text: 'Cleaner homepage, better mobile layout, and a more modern impression for companies that already have a website.',
+          contactTag: 'Contact',
+          contactTitle: 'Available for small projects, website redesigns, and long-term support.',
+          contactLead: 'Best fit for local businesses, restaurants, apartments, service providers, and smaller brands that need reliable web support.',
+          emailLabel: 'Email',
+          baseLabel: 'Base',
+          baseValue: 'Koper, Slovenia',
+          servicesTag: 'Services',
+          servicesTitle: 'What I can build for your business',
+          servicesCopy: 'These offers are aimed mainly at smaller businesses that want a professional online presence without a complicated process or unnecessary cost.',
+          service1Tag: 'Website',
+          service1Title: 'Presentation websites',
+          service1Desc: 'For companies, trades, local venues, apartments, and service businesses that need a modern and trustworthy web presence.',
+          service1Item1: 'Company or service presentation',
+          service1Item2: 'Clear service structure',
+          service1Item3: 'Mobile-friendly layout',
+          service2Tag: 'Shop',
+          service2Title: 'Small online shops',
+          service2Desc: 'Simple online stores for selling products, gifts, local goods, or a focused offer.',
+          service2Item1: 'Basic shop setup',
+          service2Item2: 'Product and category pages',
+          service2Item3: 'Order and payment setup',
+          service3Tag: 'Landing page',
+          service3Title: 'Sales and campaign pages',
+          service3Desc: 'Single-page websites for a specific offer, campaign, service, or promotional push.',
+          service3Item1: 'Page for one service or offer',
+          service3Item2: 'Focus on inquiries',
+          service3Item3: 'Clean and clear presentation',
+          service4Tag: 'Redesign',
+          service4Title: 'Website redesign',
+          service4Desc: 'If your current website looks outdated, feels unclear, or works poorly on mobile, I can refresh it.',
+          service4Item1: 'Visual refresh',
+          service4Item2: 'Better content structure',
+          service4Item3: 'Faster and more mobile-friendly',
+          service5Tag: 'Integrations',
+          service5Title: 'Forms, bookings, and connections',
+          service5Desc: 'I can add contact forms, inquiries, bookings, or simple connections with the tools you already use.',
+          service5Item1: 'Contact forms',
+          service5Item2: 'Inquiry or booking forms',
+          service5Item3: 'Simple payment or email connections',
+          service6Tag: 'Support',
+          service6Title: 'Maintenance and small changes',
+          service6Desc: 'After launch, I can handle small edits, content updates, and general technical support.',
+          service6Item1: 'Content edits',
+          service6Item2: 'Small technical changes',
+          service6Item3: 'Basic maintenance',
+          pricingTag: 'Packages',
+          pricingTitle: 'Clear packages for smaller businesses',
+          pricingCopy: 'These packages make it easy for clients to quickly understand what they get and in what price range.',
+          pack1Tag: 'Basic',
+          pack1Title: 'Basic website',
+          pack1Price: 'from €250',
+          pack1Note: 'Good for smaller activities, single services, or a simple web presence.',
+          pack1Item1: '1 page with core information',
+          pack1Item2: 'Mobile-friendly layout',
+          pack1Item3: 'Contact form or contact details',
+          pack1Item4: 'Basic launch setup',
+          popularBadge: 'Most common choice',
+          pack2Tag: 'Business',
+          pack2Title: 'Business website',
+          pack2Price: 'from €600',
+          pack2Note: 'For companies that want a more complete and professional web presence.',
+          pack2Item1: 'Up to 5 pages',
+          pack2Item2: 'Custom structure and content',
+          pack2Item3: 'Mobile and basic speed optimization',
+          pack2Item4: 'Contact or inquiry form',
+          pack2Item5: 'Basic SEO setup',
+          pack3Tag: 'Shop',
+          pack3Title: 'Small online shop',
+          pack3Price: 'from €900',
+          pack3Note: 'For businesses that want to start selling online with a simple and clear setup.',
+          pack3Item1: 'Small shop setup',
+          pack3Item2: 'Product and category pages',
+          pack3Item3: 'Orders and payment setup',
+          pack3Item4: 'Basic visual customization',
+          pack3Item5: 'Launch support',
+          whyTag: 'Why work with me',
+          whyTitle: 'A practical local alternative to larger agencies',
+          whyCopy: 'The focus is on simple communication, fair agreements, and solutions that are actually useful for smaller businesses.',
+          why1Title: 'Direct contact',
+          why1Desc: 'Communication is direct, without middlemen, so everything is quicker and clearer.',
+          why2Title: 'Built for real needs',
+          why2Desc: 'The goal is a website that presents the business well and quickly gives visitors the information they need.',
+          why3Title: 'Made for smaller clients',
+          why3Desc: 'This offer is tailored to local businesses that do not need a big agency, just a reliable developer.',
+          aboutTag: 'About',
+          aboutTitle: 'Web solutions for local businesses',
+          aboutP1: 'Papa D Labs is focused on websites for smaller businesses, service providers, restaurants, apartments, and other local companies. The main goal is clear presentation, a strong first impression, and a site that also works well on mobile.',
+          aboutP2: 'The most useful projects are new websites, redesigns, and simple web solutions without unnecessary complexity.',
+          faq1Q: 'How fast can we start?',
+          faq1A: 'For smaller projects, work can usually start quickly once we agree on the content, scope, and goals.',
+          faq2Q: 'Do you work only with companies on the coast?',
+          faq2A: 'No. I work with clients in Koper and Primorska, and by agreement also elsewhere in Slovenia.',
+          faq3Q: 'Is ongoing support possible?',
+          faq3A: 'Yes. After launch I can handle small changes, content updates, and basic maintenance.',
+          languagesTag: 'Languages',
+          languagesTitle: 'Support for a wider market too',
+          languagesCopy: 'The main focus is Slovenia, but the website content can also be adapted to other languages when needed.',
+          langSlDesc: 'Slovenian as the main choice for local business communication.',
+          langItDesc: 'Italian for nearby cross-border clients and tourism.',
+          langEnDesc: 'English for international presentation or future expansion.',
+          langDeDesc: 'German for the Austrian market and broader regional presentation.',
+          footerLeft: '© 2026 Papa D Labs. Website design and small web solutions.',
+          footerRight: 'Koper · Slovenia'
+        },
+        de: {
+          navServices: 'Leistungen', navPricing: 'Pakete', navAbout: 'Über mich', navLanguages: 'Sprachen', navContact: 'Kontakt',
+          topSlide1Tag: 'Präsentation', topSlide1Title: 'Sauberer und moderner Auftritt für kleine Unternehmen',
+          topSlide2Tag: 'E-Commerce', topSlide2Title: 'Einfacher Online-Shop für Produkte und Bestellungen',
+          topSlide3Tag: 'Redesign', topSlide3Title: 'Bessere mobile Nutzung und moderneres Design',
+          topSlide4Tag: 'Support', topSlide4Title: 'Kleine Änderungen, Wartung und Weiterentwicklung',
+          eyebrow: 'Koper · Küste · Slowenien',
+          heroTitle: 'Websites für kleine Unternehmen, Lokale und Dienstleister.',
+          heroLead: 'Ich unterstütze kleine Unternehmen an der slowenischen Küste und in ganz Slowenien bei klaren, modernen und leicht nutzbaren Websites. Ob Firmenpräsenz, Redesign oder kleiner Online-Shop — ich kann eine praktische Lösung umsetzen, die zu Ihrem Geschäft passt.',
+          heroPoint1: 'Websites für Unternehmen, Lokale und Services',
+          heroPoint2: 'Redesigns und kleine Online-Shops',
+          heroPoint3: 'Einfache Kommunikation und schnelle Umsetzung',
+          heroPoint4: 'Standort Koper, verfügbar in ganz Slowenien',
+          heroCta1: 'Angebot anfragen',
+          heroCta2: 'Leistungen ansehen',
+          slide1Tag: 'Restaurant',
+          slide1Title: 'Website für Restaurant oder Café',
+          slide1Text: 'Speisekarte, Reservierungen, Öffnungszeiten, Lage und Fotos in einer klaren Darstellung, die auch mobil gut funktioniert.',
+          slide2Tag: 'Apartments',
+          slide2Title: 'Präsentation für Apartments oder Tourismus',
+          slide2Text: 'Fotogalerie, Unterkunftsbeschreibung, Preise, Kontakt und schnelle Informationen für Gäste in modernerer Form.',
+          slide3Tag: 'Redesign',
+          slide3Title: 'Modernisierung einer älteren Firmenwebsite',
+          slide3Text: 'Übersichtlichere Startseite, besseres mobiles Layout und ein modernerer Eindruck für Unternehmen mit bestehender Website.',
+          contactTag: 'Kontakt',
+          contactTitle: 'Verfügbar für kleine Projekte, Website-Redesigns und laufende Betreuung.',
+          contactLead: 'Besonders passend für lokale Unternehmen, Restaurants, Apartments, Dienstleister und kleinere Marken, die zuverlässige Web-Unterstützung brauchen.',
+          emailLabel: 'E-Mail',
+          baseLabel: 'Standort',
+          baseValue: 'Koper, Slowenien',
+          servicesTag: 'Leistungen',
+          servicesTitle: 'Was ich für Ihr Unternehmen umsetzen kann',
+          servicesCopy: 'Das Angebot richtet sich vor allem an kleinere Unternehmen, die eine professionelle Online-Präsenz ohne komplizierten Prozess und unnötige Kosten möchten.',
+          service1Tag: 'Website',
+          service1Title: 'Präsentationswebsites',
+          service1Desc: 'Für Unternehmen, Handwerker, Lokale, Apartments und Dienstleister, die eine moderne und vertrauenswürdige Webpräsenz brauchen.',
+          service1Item1: 'Präsentation des Unternehmens oder Angebots',
+          service1Item2: 'Klare Struktur der Leistungen',
+          service1Item3: 'Mobilfreundliches Layout',
+          service2Tag: 'Shop',
+          service2Title: 'Kleine Online-Shops',
+          service2Desc: 'Einfache Online-Shops für Produkte, Geschenke, lokale Waren oder ein gezieltes Angebot.',
+          service2Item1: 'Grundlegendes Shop-Setup',
+          service2Item2: 'Produkt- und Kategorieseiten',
+          service2Item3: 'Bestell- und Zahlungssetup',
+          service3Tag: 'Landingpage',
+          service3Title: 'Verkaufs- und Kampagnenseiten',
+          service3Desc: 'Einseitige Websites für ein bestimmtes Angebot, eine Kampagne, eine Dienstleistung oder eine Promotion.',
+          service3Item1: 'Seite für ein Angebot oder eine Leistung',
+          service3Item2: 'Fokus auf Anfragen',
+          service3Item3: 'Klare und saubere Darstellung',
+          service4Tag: 'Redesign',
+          service4Title: 'Redesign bestehender Websites',
+          service4Desc: 'Wenn die aktuelle Website veraltet wirkt, unübersichtlich ist oder mobil schlecht funktioniert, kann ich sie modernisieren.',
+          service4Item1: 'Visuelle Auffrischung',
+          service4Item2: 'Bessere Inhaltsstruktur',
+          service4Item3: 'Schneller und mobilfreundlicher',
+          service5Tag: 'Integrationen',
+          service5Title: 'Formulare, Buchungen und Verbindungen',
+          service5Desc: 'Ich kann Kontaktformulare, Anfragen, Buchungen oder einfache Verbindungen zu bereits genutzten Tools hinzufügen.',
+          service5Item1: 'Kontaktformulare',
+          service5Item2: 'Anfrage- oder Buchungsformulare',
+          service5Item3: 'Einfache Zahlungs- oder E-Mail-Verbindungen',
+          service6Tag: 'Support',
+          service6Title: 'Wartung und kleine Änderungen',
+          service6Desc: 'Nach dem Launch kann ich kleine Anpassungen, Inhaltsupdates und allgemeine technische Unterstützung übernehmen.',
+          service6Item1: 'Inhaltsänderungen',
+          service6Item2: 'Kleine technische Anpassungen',
+          service6Item3: 'Grundlegende Wartung',
+          pricingTag: 'Pakete',
+          pricingTitle: 'Klare Pakete für kleinere Unternehmen',
+          pricingCopy: 'Diese Pakete helfen dem Kunden schnell zu verstehen, was enthalten ist und in welchem Preisrahmen sich das bewegt.',
+          pack1Tag: 'Basis',
+          pack1Title: 'Basis-Website',
+          pack1Price: 'ab 250 €',
+          pack1Note: 'Geeignet für kleine Tätigkeiten, einzelne Leistungen oder eine einfache Online-Präsenz.',
+          pack1Item1: '1 Seite mit den wichtigsten Informationen',
+          pack1Item2: 'Mobilfreundliches Layout',
+          pack1Item3: 'Kontaktformular oder Kontaktdaten',
+          pack1Item4: 'Grundlegende Vorbereitung für den Launch',
+          popularBadge: 'Häufigste Wahl',
+          pack2Tag: 'Business',
+          pack2Title: 'Business-Website',
+          pack2Price: 'ab 600 €',
+          pack2Note: 'Für Unternehmen, die eine vollständigere und professionellere Online-Präsenz möchten.',
+          pack2Item1: 'Bis zu 5 Unterseiten',
+          pack2Item2: 'Individuelle Struktur und Inhalte',
+          pack2Item3: 'Mobile und grundlegende Geschwindigkeitsoptimierung',
+          pack2Item4: 'Kontakt- oder Anfrageformular',
+          pack2Item5: 'Grundlegendes SEO-Setup',
+          pack3Tag: 'Shop',
+          pack3Title: 'Kleiner Online-Shop',
+          pack3Price: 'ab 900 €',
+          pack3Note: 'Für Unternehmen, die mit einer klaren und einfachen Struktur online verkaufen möchten.',
+          pack3Item1: 'Einrichtung eines kleinen Shops',
+          pack3Item2: 'Produkt- und Kategorieseiten',
+          pack3Item3: 'Bestell- und Zahlungssetup',
+          pack3Item4: 'Grundlegende visuelle Anpassung',
+          pack3Item5: 'Unterstützung beim Launch',
+          whyTag: 'Warum zusammenarbeiten',
+          whyTitle: 'Lokale und praktische Alternative zu größeren Agenturen',
+          whyCopy: 'Im Mittelpunkt stehen einfache Kommunikation, faire Absprachen und Lösungen, die für kleinere Unternehmen wirklich sinnvoll sind.',
+          why1Title: 'Direkter Kontakt',
+          why1Desc: 'Die Kommunikation ist direkt, ohne Vermittler, daher läuft alles schneller und klarer.',
+          why2Title: 'Lösungen für reale Bedürfnisse',
+          why2Desc: 'Das Ziel ist eine Website, die das Unternehmen gut präsentiert und Besuchern schnell die wichtigen Informationen gibt.',
+          why3Title: 'Für kleinere Kunden gemacht',
+          why3Desc: 'Das Angebot passt zu lokalen Unternehmen, die keine große Agentur brauchen, sondern einen verlässlichen Entwickler.',
+          aboutTag: 'Über mich',
+          aboutTitle: 'Weblösungen für lokale Unternehmen',
+          aboutP1: 'Papa D Labs konzentriert sich auf Websites für kleinere Unternehmen, Dienstleister, Restaurants, Apartments und andere lokale Anbieter. Wichtig sind klare Präsentation, ein guter erster Eindruck und eine Website, die auch mobil gut funktioniert.',
+          aboutP2: 'Am sinnvollsten sind neue Websites, Redesigns und einfache Weblösungen ohne unnötige Komplexität.',
+          faq1Q: 'Wie schnell können wir starten?',
+          faq1A: 'Bei kleineren Projekten kann die Arbeit meist schnell beginnen, sobald Inhalte, Umfang und Ziele abgestimmt sind.',
+          faq2Q: 'Arbeiten Sie nur mit Unternehmen an der Küste?',
+          faq2A: 'Nein. Ich arbeite mit Kunden in Koper und Primorska, nach Absprache aber auch in anderen Teilen Sloweniens.',
+          faq3Q: 'Ist auch spätere Betreuung möglich?',
+          faq3A: 'Ja. Nach dem Launch kann ich kleine Änderungen, Inhaltsupdates und grundlegende Wartung übernehmen.',
+          languagesTag: 'Sprachen',
+          languagesTitle: 'Unterstützung auch für einen breiteren Markt',
+          languagesCopy: 'Der erste Fokus liegt auf dem slowenischen Markt, Inhalte können bei Bedarf aber auch in andere Sprachen angepasst werden.',
+          langSlDesc: 'Slowenisch als Hauptsprache für lokale Unternehmen.',
+          langItDesc: 'Italienisch für grenznahe Kunden und Tourismus.',
+          langEnDesc: 'Englisch für internationale Darstellung oder spätere Expansion.',
+          langDeDesc: 'Deutsch für den österreichischen Markt und eine breitere regionale Präsentation.',
+          footerLeft: '© 2026 Papa D Labs. Website-Erstellung und kleine Weblösungen.',
+          footerRight: 'Koper · Slowenien'
+        }
+      };
+
+      function setLanguage(lang) {
+        const dict = translations[lang] || translations.sl;
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+          }
+        });
+
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+          btn.classList.toggle("active", btn.dataset.lang === lang);
+        });
+
+        localStorage.setItem("papa_d_lang", lang);
+      }
+
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+      });
+
+      const savedLang = localStorage.getItem("papa_d_lang") || "sl";
+      setLanguage(savedLang);
+
+      const topSliderTrack = document.getElementById("topSliderTrack");
+      const topDots = Array.from(document.querySelectorAll(".top-dot"));
+      let topIndex = 0;
+      let topTimer;
+
+      function updateTopSlider(index) {
+        if (!topSliderTrack || !topDots.length) return;
+        topIndex = index;
+        topSliderTrack.style.transform = `translateX(-${index * 100}%)`;
+        topDots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+      }
+
+      function startTopSlider() {
+        if (!topDots.length) return;
+        clearInterval(topTimer);
+        topTimer = setInterval(() => {
+          topIndex = (topIndex + 1) % topDots.length;
+          updateTopSlider(topIndex);
+        }, 5000);
+      }
+
+      topDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          updateTopSlider(index);
+          startTopSlider();
+        });
+      });
+
+      updateTopSlider(0);
+      startTopSlider();
+
+      const heroSlides = document.getElementById("heroSlides");
+      const heroDots = Array.from(document.querySelectorAll(".hero-dot"));
+      let heroIndex = 0;
+      let heroTimer;
+
+      function updateHeroSlider(index) {
+        if (!heroSlides || !heroDots.length) return;
+        heroIndex = index;
+        heroSlides.style.transform = `translateX(-${index * 100}%)`;
+        heroDots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+      }
+
+      function startHeroSlider() {
+        if (!heroDots.length) return;
+        clearInterval(heroTimer);
+        heroTimer = setInterval(() => {
+          heroIndex = (heroIndex + 1) % heroDots.length;
+          updateHeroSlider(heroIndex);
+        }, 4200);
+      }
+
+      heroDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          updateHeroSlider(index);
+          startHeroSlider();
+        });
+      });
+
+      updateHeroSlider(0);
+      startHeroSlider();
+    });
+  </script>
+</body>
 </html>
