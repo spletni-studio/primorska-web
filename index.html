@@ -6,31 +6,43 @@
   <title>Papa D Labs | Spletne strani za manjša podjetja</title>
   <meta name="description" content="Papa D Labs izdeluje sodobne spletne strani, manjše spletne trgovine in preproste spletne rešitve za manjša podjetja v Sloveniji." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/favicon-512.png">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
+   <header class="topbar">
+   <div class="container topbar-inner">
+
       <a href="#home" class="brand">
-        <span class="brand-mark">PD</span>
-        <span>Papa D Labs</span>
+         <img src="/logo-light.svg" alt="Papa D Labs" class="logo-img">
       </a>
 
-      <nav>
-        <a href="#services" data-i18n="navServices">Storitve</a>
-        <a href="#pricing" data-i18n="navPricing">Paketi</a>
-        <a href="#about" data-i18n="navAbout">O meni</a>
-        <a href="#languages" data-i18n="navLanguages">Jeziki</a>
-        <a href="#contact" class="nav-cta" data-i18n="navContact">Kontakt</a>
+      <button class="menu-toggle" type="button">
+         <span></span>
+         <span></span>
+         <span></span>
+      </button>
 
-        <div class="lang-switcher" aria-label="Language switcher">
-          <button class="lang-btn active" data-lang="sl" type="button">SL</button>
-          <button class="lang-btn" data-lang="it" type="button">IT</button>
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
-          <button class="lang-btn" data-lang="de" type="button">DE</button>
-        </div>
+      <nav id="site-nav">
+
+         <a href="#services">Storitve</a>
+         <a href="#pricing">Paketi</a>
+         <a href="#about">O meni</a>
+         <a href="#languages">Jeziki</a>
+         <a href="#contact" class="nav-cta">Kontakt</a>
+
+         <div class="lang-switcher">
+         <button class="lang-btn active" data-lang="sl">SL</button>
+         <button class="lang-btn" data-lang="it">IT</button>
+         <button class="lang-btn" data-lang="en">EN</button>
+         <button class="lang-btn" data-lang="de">DE</button>
+         </div>
+
       </nav>
-    </div>
-  </header>
+
+   </div>
+   </header>
 
   <section class="top-slider" aria-label="Featured visual slider">
     <div class="top-slider-track" id="topSliderTrack">
@@ -1031,6 +1043,12 @@
       updateHeroSlider(0);
       startHeroSlider();
     });
+   const toggle = document.querySelector(".menu-toggle");
+   const nav = document.getElementById("site-nav");
+
+   toggle.addEventListener("click", () => {
+   nav.classList.toggle("open");
+   });
   </script>
 </body>
 </html>
