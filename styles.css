@@ -638,7 +638,7 @@ h3 {
 	}
 }
 .logo-img {
-  height: 42px;
+  height: 50px;
 }
 
 .menu-toggle {
@@ -682,4 +682,10 @@ h3 {
     gap: 12px;
   }
 
+}
+.portfolio-slider {
+  padding: 60px 0;
+  background: rgba(255,255,255,.02);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
