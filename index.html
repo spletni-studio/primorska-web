@@ -11,38 +11,54 @@
   <link rel="apple-touch-icon" href="/favicon-512.png">
 </head>
 <body>
-   <header class="topbar">
-   <div class="container topbar-inner">
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="#home" class="brand">
+      <img src="/logo-light.svg" alt="Papa D Labs" class="logo-img">
+    </a>
 
-      <a href="#home" class="brand">
-         <img src="/logo-light.svg" alt="Papa D Labs" class="logo-img">
-      </a>
+    <nav id="site-nav">
+      <a href="#services" data-i18n="navServices">Storitve</a>
+      <a href="#pricing" data-i18n="navPricing">Paketi</a>
+      <a href="#about" data-i18n="navAbout">O meni</a>
+      <a href="#languages" data-i18n="navLanguages">Jeziki</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+    </nav>
 
-      <button class="menu-toggle" type="button">
-         <span></span>
-         <span></span>
-         <span></span>
+    <div class="header-actions">
+      <div class="lang-menu" id="langMenu">
+        <button class="lang-current" id="langCurrent" type="button" aria-expanded="false" aria-label="Choose language">
+          <img src="./flags/sl.png" id="langCurrentFlag" alt="Slovenščina">
+        </button>
+
+        <div class="lang-dropdown">
+          <button class="lang-option active" data-lang="sl" data-flag="./flags/sl.png" data-label="Slovenščina" type="button">
+            <img src="./flags/sl.png" alt="Slovenščina">
+            <span>Slovenščina</span>
+          </button>
+          <button class="lang-option" data-lang="it" data-flag="./flags/it.png" data-label="Italiano" type="button">
+            <img src="./flags/it.png" alt="Italiano">
+            <span>Italiano</span>
+          </button>
+          <button class="lang-option" data-lang="en" data-flag="./flags/en.png" data-label="English" type="button">
+            <img src="./flags/en.png" alt="English">
+            <span>English</span>
+          </button>
+          <button class="lang-option" data-lang="de" data-flag="./flags/de.png" data-label="Deutsch" type="button">
+            <img src="./flags/de.png" alt="Deutsch">
+            <span>Deutsch</span>
+          </button>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-
-      <nav id="site-nav">
-
-         <a href="#services">Storitve</a>
-         <a href="#pricing">Paketi</a>
-         <a href="#about">O meni</a>
-         <a href="#languages">Jeziki</a>
-         <a href="#contact" class="nav-cta">Kontakt</a>
-
-         <div class="lang-switcher">
-         <button class="lang-btn active" data-lang="sl">SL</button>
-         <button class="lang-btn" data-lang="it">IT</button>
-         <button class="lang-btn" data-lang="en">EN</button>
-         <button class="lang-btn" data-lang="de">DE</button>
-         </div>
-
-      </nav>
-
-   </div>
-   </header>
+    </div>
+  </div>
+</header>
 
   <section class="top-slider" aria-label="Featured visual slider">
     <div class="top-slider-track" id="topSliderTrack">
@@ -448,7 +464,45 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const translations = {
+  const menuToggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("site-nav");
+  const langMenu = document.getElementById("langMenu");
+  const langCurrent = document.getElementById("langCurrent");
+  const langCurrentFlag = document.getElementById("langCurrentFlag");
+  const langOptions = document.querySelectorAll(".lang-option");
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      menuToggle.classList.toggle("active", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  if (langMenu && langCurrent) {
+    langCurrent.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = langMenu.classList.toggle("open");
+      langCurrent.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!langMenu.contains(e.target)) {
+        langMenu.classList.remove("open");
+        langCurrent.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+const translations = {
         sl: {
           navServices: 'Storitve', navPricing: 'Paketi', navAbout: 'O meni', navLanguages: 'Jeziki', navContact: 'Kontakt',
           topSlide1Tag: 'Spletna predstavitev', topSlide1Title: 'Čist, sodoben nastop za manjša podjetja',
@@ -979,13 +1033,53 @@
         });
 
         localStorage.setItem("papa_d_lang", lang);
+const selectedOption = document.querySelector(`.lang-option[data-lang="${lang}"]`);
+
+if (selectedOption && langCurrentFlag) {
+  langCurrentFlag.src = selectedOption.dataset.flag;
+  langCurrentFlag.alt = selectedOption.dataset.label;
+}
+
+document.querySelectorAll(".lang-option").forEach((btn) => {
+  btn.classList.toggle("active", btn.dataset.lang === lang);
+});
+
+if (langMenu) {
+  langMenu.classList.remove("open");
+}
+
+if (langCurrent) {
+  langCurrent.setAttribute("aria-expanded", "false");
+}
+
+
+
+        const selected =
+         document.querySelector(
+            `.lang-option[data-lang="${lang}"]`
+         );
+
+         if (selected) {
+
+         document
+            .getElementById("langCurrentFlag")
+            .src = selected.dataset.flag;
+
+         }
+
       }
 
       document.querySelectorAll(".lang-btn").forEach((btn) => {
         btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
       });
 
-      const savedLang = localStorage.getItem("papa_d_lang") || "sl";
+      langOptions.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    setLanguage(btn.dataset.lang);
+  });
+});
+
+const savedLang = localStorage.getItem("papa_d_lang") || "sl";
       setLanguage(savedLang);
 
       const topSliderTrack = document.getElementById("topSliderTrack");
@@ -1050,12 +1144,6 @@
       updateHeroSlider(0);
       startHeroSlider();
     });
-   const toggle = document.querySelector(".menu-toggle");
-   const nav = document.getElementById("site-nav");
-
-   toggle.addEventListener("click", () => {
-   nav.classList.toggle("open");
-   });
   </script>
 </body>
 </html>
