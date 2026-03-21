@@ -251,7 +251,7 @@ nav a:hover {
 h1,
 h2,
 h3 {
-	margin: 0;
+	margin: 0px, opx, 10px, 0px;
 	line-height: 1.12
 }
 
@@ -821,7 +821,7 @@ h3 {
 
 .pricing-old {
   display: block;
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--muted);
   text-decoration: line-through;
   margin-bottom: 4px;
